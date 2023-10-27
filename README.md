@@ -31,7 +31,10 @@ To get started with creating your own VPC using Terraform and GitHub Actions, si
     ```bash
     git checkout -b feature/
     ```
-* Make your changes, commit them, and push the branch to the remote repository.  
+* Make your changes, commit them, and push the branch to the remote repository:
+    ```bash
+    git push --set-upstream origin feature/update-readme
+    ```
 * Switch to the main branch:
     ```bash
     git checkout main
