@@ -14,11 +14,48 @@ This GitHub repository is a comprehensive guide and automation project for creat
 
 5. **Documentation:** Detailed documentation is provided to guide you through the process, helping you understand the Terraform code and GitHub Actions workflows.
 
-6. **Contributions Welcome:** We encourage contributions from the community to improve and expand the project. If you have suggestions or improvements, feel free to submit a pull request.
-
 ## Getting Started
 
 To get started with creating your own VPC using Terraform and GitHub Actions, simply clone this repository and follow the step-by-step instructions provided in the documentation.
+
+### Architecture
+![Aws Architecture](Screenshots/VPC_Architecture.png)
+
+### Execution Flow
+![Execution Flow](Screenshots/Execution_Flow.png)
+
+### Branching Strategy
+**Feature Branch Workflow :** A Git branching model that encourages collaboration and isolation of new features or bug fixes in separate branches before they are merged into the main codebase.
+
+* Create a feature branch: 
+    ```bash
+    git checkout -b feature/
+    ```
+* Make your changes, commit them, and push the branch to the remote repository.  
+* Switch to the main branch:
+    ```bash
+    git checkout main
+    ```  
+* Merge the feature branch into the main branch: 
+    ```bash
+    git merge feature/
+    ```
+* After merging, push the changes to the remote repository.    
+    ```bash
+    git push origin main
+    ```
+* Once the feature branch has been merged and is no longer needed, you can delete it.
+    ```bash
+    git branch -d feature/login-page  # Locally
+    git push origin --delete feature/login-page  # Remotely
+    ```    
+This branching strategy is helpful for keeping your main branch clean and always deployable. Feature branches provide isolation and allow team members to work on different tasks simultaneously without interfering with each other. It also makes it easier to track changes and manage the development process.
+
+
+
+
+
+
 
 ## License
 
@@ -30,4 +67,4 @@ Kirubel Fikru Weldesemayat
 
 ## Contact
 
-If you have any questions or need assistance, feel free to open an issue or reach out to us at kirubelfikruwsh@gmail.com.
+If you have any questions or need assistance, feel free to open an issue or reach out to me at kirubelfikruwsh@gmail.com.
