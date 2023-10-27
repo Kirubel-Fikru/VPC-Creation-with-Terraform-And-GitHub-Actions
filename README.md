@@ -49,8 +49,8 @@ To get started with creating your own VPC using Terraform and GitHub Actions, si
     ```
 * Once the feature branch has been merged and is no longer needed, you can delete it.
     ```bash
-    git branch -d feature/login-page  # Locally
-    git push origin --delete feature/login-page  # Remotely
+    git branch -d feature/ # Locally
+    git push origin --delete feature/  # Remotely
     ```    
 This branching strategy is helpful for keeping your main branch clean and always deployable. Feature branches provide isolation and allow team members to work on different tasks simultaneously without interfering with each other. It also makes it easier to track changes and manage the development process.
 
